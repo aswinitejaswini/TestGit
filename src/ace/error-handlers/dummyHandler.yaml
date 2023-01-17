@@ -1,0 +1,3 @@
+errorPattern: dummy
+errorCode: 400
+errorMessage: Dummy catch

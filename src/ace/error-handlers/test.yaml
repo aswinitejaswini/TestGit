@@ -1,0 +1,3 @@
+errorPattern: test
+errorCode: 400
+errorMessage: Test Example catch

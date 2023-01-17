@@ -1,0 +1,7 @@
+title: response200
+properties:
+  stringProp:
+    type: string
+type: object
+required:
+  - stringProp

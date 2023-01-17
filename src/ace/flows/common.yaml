@@ -1,0 +1,21 @@
+name: common
+tags: []
+version: ""
+sampleInputSchema: ""
+sampleData: "{}"
+description: "common flow for "
+steps:
+  - name: Step jsonata
+    description: ""
+    config:
+      maps:
+        - mergeArrayItems: {}
+          jsonata: >-
+            {
+            "data":{
+             "test": "test"
+            }
+            }
+          targetPath: result
+    stepType: jsonata
+    condition: ""

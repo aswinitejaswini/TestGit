@@ -1,0 +1,19 @@
+tags: []
+sampleInputSchema: ""
+sampleData: "{}"
+description: commonTwo
+steps:
+  - name: Step jsonata
+    description: ""
+    config:
+      maps:
+        - mergeArrayItems: {}
+          jsonata: |-
+            {
+            "data":{
+             "test": "test"
+            }
+            }
+          targetPath: result
+    stepType: jsonata
+    condition: ""

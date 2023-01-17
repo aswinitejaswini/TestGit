@@ -1,0 +1,41 @@
+components:
+  schemas:
+    response200:
+      $ref: schemas/response200.yaml
+info:
+  version: 1.0.0
+  title: Dynamic apis
+  description: List of dynamic apis
+openapi: 3.0.0
+paths:
+  /testJsonExample:
+    get:
+      x-ace-flow: jsonExample.yaml
+      x-ace-error-handlers: []
+      x-ace-secured: null
+      responses:
+        "200":
+          description: ""
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  sample:
+                    type: string
+                  sample2:
+                    type: integer
+                example:
+                  sample: response
+                  sample2: 333
+      operationId: newFlow2
+      parameters: []
+      requestBody:
+        description: body param generated from provided JSON request example
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              example: {}
+name: ace

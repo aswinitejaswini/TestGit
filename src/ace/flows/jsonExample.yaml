@@ -1,0 +1,23 @@
+name: jsonExample
+tags: []
+version: ""
+sampleInputSchema: ""
+sampleData: "{}"
+description: "json example for testing"
+steps:
+  - name: Step jsonata
+    description: ""
+    config:
+      maps:
+        - mergeArrayItems: {}
+          jsonata: >-
+            {
+
+            "data":{
+             "test": "test"
+            }
+
+            }
+          targetPath: result
+    stepType: jsonata
+    condition: ""
